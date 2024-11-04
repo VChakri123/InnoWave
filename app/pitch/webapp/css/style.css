@@ -1,0 +1,11 @@
+/* Enter your custom styles here */
+
+.table1{
+    background-color: coral;
+}
+.title1{
+    background-color:cornsilk !important;
+}
+.sapMPopover .sapMIBar.sapMHeader-CTX {
+    background-color: coral !important;
+}

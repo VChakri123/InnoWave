@@ -1,0 +1,101 @@
+<mvc:View
+    controllerName="com.app.pitch.controller.Cric1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <Table
+            class="table1"
+            id="idEmployeeTable"
+            mode="MultiSelect"
+            alternateRowColors="true"
+            items="{/Cricket}"
+            selectionChange="onSelectEmployee"
+        >
+            <headerToolbar>
+                <OverflowToolbar id="idEmployeeTableHeader">
+                    <Title
+                        id="idTableHeaderTitle"
+                        text="Employees"
+                    />
+                    <ToolbarSpacer id="idTableHeaderSpacer" />
+                    <Button
+                        id="idBtnCreate"
+                        icon="sap-icon://add"
+                        tooltip="Create Employee"
+                        type="Success"
+                        press="onCreateBtnPress"
+                    />
+                    <Button
+                        id="idUpdateBtnEmployee"
+                        icon="sap-icon://edit"
+                        type="Accept"
+                        press="onPressUpdateBtn"
+                    />
+                    <Button
+                        id="idDeleteBtnEmployee"
+                        icon="sap-icon://delete"
+                        type="Reject"
+                        press="onPressDeleteBtn"
+                    />
+                </OverflowToolbar>
+            </headerToolbar>
+            <columns>
+                <Column id="ID">
+                    <Title
+                        id="ID1"
+                        text="ID"
+                    />
+                </Column>
+                <Column id="idName">
+                    <Title
+                        id="idName1"
+                        text="Name"
+                    />
+                </Column>
+                <Column id="idRole">
+                    <Title
+                        id="idRole1"
+                        text="Role"
+                    />
+                </Column>
+                <Column id="idSalary">
+                    <Title
+                        id="idSalary1"
+                        text="Salary"
+                    />
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem
+                    id="idEmployeeTableColListItem"
+                    class="title1"
+                    type="Navigation"
+                >
+                    <cells>
+                        <Text
+                            id="idIDColValue"
+                            text="{ID}"
+                        />
+                        <Text
+                            id="idNameColValue"
+                            text="{name}"
+                        />
+                        <Text
+                            id="idRoleColValue"
+                            text="{role}"
+                        />
+                        <Text
+                            id="idSalaryColValue"
+                            text="{salary}"
+                        />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Page>
+</mvc:View>
