@@ -8,7 +8,7 @@
         resizable="true"
         draggable="true"  
         contentWidth="20%"
-        contentHeight="30%"
+        contentHeight="40%"
         title="Update Employee"
         class="sapMPopover sapMIBar sapMHeader-CTX"
     >
@@ -54,7 +54,7 @@
                 <Input
                     id="idFirstNameInput1"
                     editable="false"
-                    value="{newEmployee1>/ID}"
+                    
                 />
                 <Label
                     id="idLastNameLabel1"
@@ -62,7 +62,7 @@
                 />
                 <Input
                     id="idLastNameInput1"
-                    value="{newEmployee1>/name}"
+                   
                 />
                 <Label
                     id="idGenderLabel1"
@@ -70,7 +70,7 @@
                 />
                 <Input
                     id="idGenderInput1"
-                    value="{newEmployee1>/role}"
+                    
                 />
                 <Label
                     id="idDOBLabel1"
@@ -78,7 +78,7 @@
                 />
                 <Input
                     id="idDOBInput1"
-                    value="{newEmployee1>/salary}"
+                    
                 />
             </form:SimpleForm>
         </content>

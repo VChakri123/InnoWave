@@ -8,7 +8,7 @@
         resizable="true"
         draggable="true"  
         contentWidth="20%"
-        contentHeight="30%"
+        contentHeight="50%"
         title="Create Employee"
         class="sapMPopover sapMIBar sapMHeader-CTX"
         
